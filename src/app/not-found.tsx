@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function NotFound() {
   return (
     <div className="min-h-screen bg-[#0a0a0a] flex flex-col items-center justify-center px-6 text-center">
@@ -50,6 +52,13 @@ export default function NotFound() {
           </svg>
           Entre em contato: @nosborde
         </a>
+
+        <Link
+          href="/"
+          className="mt-6 text-xs text-zinc-600 underline-offset-2 hover:text-zinc-400 hover:underline transition-colors"
+        >
+          Voltar para o início
+        </Link>
       </div>
     </div>
   )
